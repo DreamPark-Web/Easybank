@@ -1,0 +1,39 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+}
+
+h2,h3 {
+  color: hsl(233, 26%, 24%);
+}
+
+p {
+  color: hsl(233, 8%, 62%);
+}
+
+#features {
+  padding: 10%;
+  background-color: hsl(220, 16%, 96%);
+  text-align: left;
+}
+
+.feature-section-heading {
+  padding-bottom: 1%;
+}
+
+.feature-heading {
+  padding: 10% 0 5% 0;
+}
+
+.first-row {
+  padding: 0 0 100px 0;
+}
