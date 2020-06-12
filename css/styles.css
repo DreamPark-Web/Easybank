@@ -74,9 +74,7 @@ p {
   padding: 2% 10%;  
 }
 
-.container-footer .row{
-  text-align: center;
-}
+
 
 .footer-icons {
   padding-right: 10px;
@@ -96,10 +94,17 @@ p {
   padding-bottom: 45px;
 }
 
-.footer-right{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@media only screen and (max-width: 768px){
 
+  .container-footer .row{
+    text-align: center;
+  }
+
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
 
