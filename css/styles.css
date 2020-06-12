@@ -9,17 +9,23 @@
 
 body {
   font-family: 'Public Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
-h2,h3 {
+h2 {
   color: hsl(233, 26%, 24%);
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
   color: hsl(233, 8%, 62%);
 }
 
+/* Features Section */
 #features {
   padding: 10%;
   background-color: hsl(220, 16%, 96%);
@@ -37,3 +43,54 @@ p {
 .first-row {
   padding: 0 0 100px 0;
 }
+
+/* Footer Section */
+#footer {
+  background-color: hsl(233, 26%, 24%);
+}
+
+.footer.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.btn-footer {
+  background-color: hsl(192, 70%, 51%);
+  border-radius: 24px;
+  margin-bottom: 45px;
+  border-style: hidden;
+}
+
+.btn-footer:hover {
+  background-color: hsl(136, 65%, 51%);
+}
+
+.container-footer {
+  padding: 2% 10%;  
+}
+
+.footer-icons {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.footer-links {
+  color: hsl(0, 0%, 98%);
+}
+
+.footer-links:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+.footer-logo {
+  padding-bottom: 45px;
+}
+
+
+
