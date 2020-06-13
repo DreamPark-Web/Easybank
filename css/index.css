@@ -34,6 +34,10 @@ header .bg-light{
     color: white;
 }
 
+.mbtn:hover{
+    opacity: 0.8;
+}
+
 .mbtn a{
     color: white;
 }
