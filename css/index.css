@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
 body,html{
     overflow-x: hidden;
     margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 4rem;
 }
 
 .header{
@@ -35,11 +43,11 @@ header .bg-light{
     background: linear-gradient(60deg, hsl(136, 65%, 51%) 0%,  hsl(192, 70%, 51%) 100%);
 }
 
-.active{
+.nav-item:hover{
     border-bottom: 2px hsl(136, 65%, 51%) solid;
 }
 
-.active a{
+.nav-item:hover a{
     color: #000;
 }
 
@@ -48,12 +56,16 @@ header .bg-light{
     padding-top: 0 !important;
 }
 
+.jumbotron .container{
+    text-align: center;
+}
+
 .bg-intro{
     position: relative;
     background: url("../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0 -6rem;
 }
 
 .mockup-img{
@@ -65,35 +77,109 @@ header .bg-light{
     position: relative;
     width: 100%;
     z-index: 1;
-    top: -10rem;
+    top: -16rem;
+}
+
+#latest-articles{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.latest-articles{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: start;
+}
+
+.article{
+    margin: 2rem auto;
+}
+
+.article p,span, h3{
+    margin: 1rem;
+}
+
+.article span{
+    font-weight: 300;
+    color: silver;
+}
+
+.article img{
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.75rem;
+}
+
+@media only screen and (min-width: 512px){
+.latest-articles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+}
 }
 
 @media only screen and (min-width: 768px){
-
-
-    .grid{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    .header{
+        padding: 1rem 0;
     }
+    .flex{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
 
     .bg-intro{
         background: url("../images/bg-intro-desktop.svg");
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+        background-size: cover;
+        background-position: -5rem -10rem;
+        float: none;
+    }
+
+    .clear-fix{
+        clear: both;
     }
 
         
     #mockup-intro{
-        position: static;
+        position: relative;
         width: 100%;
         z-index: 1;
-    }
-
+        top: 0;
+        left: 12rem;
+    
+   }
+   
     .jumbotron{
         display: flex;
+        margin-top: 20rem;
         justify-content: center;
-        align-items: center;
         flex: 1;
+        background-color: transparent;
+        padding-left: 6rem;
     }
+
+    .jumbotron .container{
+        text-align: start;
+    }
+
+    .jumbotron h4{
+        margin: 2rem auto;
+        line-height: 1.5;
+    }
+
+    .w-60{
+        width: 60%;
+        margin-left: 3rem;
+    }
+
 }
+
+@media only screen and (min-width: 1024px){
+    .latest-articles{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1rem;
+    }
+    }
