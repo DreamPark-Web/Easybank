@@ -7,6 +7,20 @@ body,html{
     font-size: 12px;
 }
 
+.navbar-nav{
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.not-active-sm{
+    display: none;
+}
+
 h1{
     font-size: 4rem;
 }
@@ -124,9 +138,11 @@ header .bg-light{
 }
 
 @media only screen and (min-width: 768px){
+
     .header{
         padding: 1rem 0;
     }
+
     .flex{
         position: relative;
         display: flex;
@@ -186,6 +202,9 @@ header .bg-light{
 }
 
 @media only screen and (min-width: 1024px){
+    .not-active-sm{
+        display: block;
+    }
     .latest-articles{
         display: grid;
         grid-template-columns: repeat(4,1fr);
