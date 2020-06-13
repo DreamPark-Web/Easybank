@@ -86,6 +86,7 @@ p {
   padding-bottom: 45px;
 }
 
+/* media query section */
 @media only screen and (max-width: 768px) {
 
   .container-footer .row {
@@ -113,6 +114,6 @@ p {
   .feature-column {
     padding-top: 5%;
   }
-   
+
 }
 
